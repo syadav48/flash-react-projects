@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo/Brand */}
           <div className="flex-shrink-0">
-            <span className="text-xl font-bold">MyPortfolio</span>
+            <span className="text-xl font-bold">My React Stacks</span>
           </div>
 
           {/* Desktop Menu */}

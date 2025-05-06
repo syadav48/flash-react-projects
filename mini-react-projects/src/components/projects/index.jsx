@@ -4,27 +4,35 @@ const Projects = () => {
   const projects = [
     {
       title: "Infinite Scrolling Box",
-      description: "A full-stack e-commerce solution with cart functionality, user authentication, and payment integration.",
+      description: "Just Like Instagram, this project implements infinite scrolling to load more content as the user scrolls down.",
       technologies: ["React", "Node.js", "MongoDB", "Stripe"],
       liveLink: "/infinite-scrolling",
       codeLink: "/infinite-scrolling",
       bgColor: "bg-blue-50"
     },
     {
-      title: "Task Management App",
-      description: "Productivity application with drag-and-drop interface, team collaboration features, and progress tracking.",
+      title: "Otp-Input",
+      description: "Otp input is a React component that allows users to enter OTP codes in a user-friendly manner.",
       technologies: ["React", "Firebase", "Tailwind CSS", "DnD Kit"],
-      liveLink: "#",
-      codeLink: "#",
+      liveLink: "/otp-input",
+      codeLink: "/otp-input",
       bgColor: "bg-green-50"
     },
     {
-      title: "Weather Dashboard",
-      description: "Real-time weather forecasting application with interactive maps and historical data visualization.",
-      technologies: ["React", "OpenWeather API", "Chart.js", "Geolocation"],
-      liveLink: "#",
-      codeLink: "#",
+      title: "Password Generator",
+      description: "Real-time Password Generator is a React component that generates strong passwords based on user-selected criteria.",
+      technologies: ["React", "Tailwind CSS", "JavaScript"],
+      liveLink: "/password-generator",
+      codeLink: "/password-generator",
       bgColor: "bg-purple-50"
+    },
+    {
+      title: "Restaurant Booking",
+      description: "Restaurant Booking is a React component that allows users to book tables at a restaurant.",
+      technologies: ["React", "Tailwind CSS", "JavaScript"],
+      liveLink: "/resturant-booking",
+      codeLink: "/resturant-booking",
+      bgColor: "bg-blue-50"
     }
   ];
 
@@ -60,7 +68,7 @@ const Projects = () => {
                   {project.technologies.map((tech, i) => (
                     <span 
                       key={i} 
-                      className="px-3 py-1 bg-white text-xs font-medium rounded-full shadow-sm"
+                      className="px-3 py-1 text-xs text-gray-900 font-medium rounded-full shadow-sm"
                     >
                       {tech}
                     </span>
@@ -71,7 +79,7 @@ const Projects = () => {
                 <div className="flex space-x-3">
                   <a 
                     href={project.liveLink} 
-                    className="flex items-center px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-md hover:bg-indigo-700 transition-colors"
+                    className="flex items-center px-4 py-2 bg-blue-950 text-sm font-medium rounded-md hover:bg-indigo-700 transition-colors text-white"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
