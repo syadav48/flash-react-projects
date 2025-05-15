@@ -29,14 +29,6 @@ function InfiniteScrolling() {
     const getRandomColor = () => {
         return `hsl(${Math.floor(Math.random() * 360)}, 100%, 75%)`
     }
-    const elements = []
-    for (let i = 0; i < count; i++) {
-        elements.push(
-            <div className="card" key={i}>
-                <span className="number-text">{i + 1}</span>
-            </div>
-        )
-    }
     return (
          <React.Fragment>
             {Array.from({ length: count }).map((_, i) => (

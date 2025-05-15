@@ -33,7 +33,23 @@ const Projects = () => {
       liveLink: "/resturant-booking",
       codeLink: "/resturant-booking",
       bgColor: "bg-blue-50"
-    }
+    },
+    {
+      title: "Image Carousel",
+      description: "Image Carousel is a React component that displays a series of images in a sliding format.",
+      technologies: ["React", "Tailwind CSS", "JavaScript"],
+      liveLink: "/image-carousel",
+      codeLink: "/image-carousel",
+      bgColor: "bg-purple-50"
+    },
+    {
+      title: "Hotel Booking",
+      description: "Hotel Booking is a React component that allows users to book hotels.",
+      technologies: ["React", "Tailwind CSS", "JavaScript"],
+      liveLink: "/hotel-booking",
+      codeLink: "/hotel-booking",
+      bgColor: "bg-purple-50"
+    },
   ];
 
   return (
