@@ -15,6 +15,7 @@ import RenderCounter from './hooks/useref/rendercount';
 import Refer from './hooks/useref/ref';
 import TimerComponent from './hooks/useref/stoptimer';
 import ThemeGiver from './context';
+import Component from './components/great-frontend/BooleanComp';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/render-counter" element={<RenderCounter />} />
           <Route path="/timer" element={<TimerComponent />} />
           <Route path="/usetheme" element={<ThemeGiver />} />
+          <Route path="/usebool" element={<Component />} />
 
           {/* Add more routes as needed */}
         </Routes>
