@@ -16,6 +16,10 @@ import Refer from './hooks/useref/ref';
 import TimerComponent from './hooks/useref/stoptimer';
 import ThemeGiver from './context';
 import Component from './components/great-frontend/BooleanComp';
+import Throttle from './jsfunction/throttle/throttleBasic';
+import ScrollDetector from './jsfunction/throttle/throttleScroll';
+import ItemList from './event-delegation';
+import NestedDelegation from './event-delegation/nestedEventDel';
 
 function App() {
   return (
@@ -38,6 +42,10 @@ function App() {
           <Route path="/timer" element={<TimerComponent />} />
           <Route path="/usetheme" element={<ThemeGiver />} />
           <Route path="/usebool" element={<Component />} />
+          <Route path="/throttle" element={<Throttle />} />
+          <Route path="/scroll-throttle" element={<ScrollDetector />} />
+          <Route path="/event-delegation" element={<ItemList />} />
+          <Route path="/event-delegation-nested" element={<NestedDelegation />} />
 
           {/* Add more routes as needed */}
         </Routes>
