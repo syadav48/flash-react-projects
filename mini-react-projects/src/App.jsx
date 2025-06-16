@@ -20,6 +20,8 @@ import Throttle from './jsfunction/throttle/throttleBasic';
 import ScrollDetector from './jsfunction/throttle/throttleScroll';
 import ItemList from './event-delegation';
 import NestedDelegation from './event-delegation/nestedEventDel';
+import BrowserEvents from './browser-events';
+import Events from './events';
 
 function App() {
   return (
@@ -46,6 +48,8 @@ function App() {
           <Route path="/scroll-throttle" element={<ScrollDetector />} />
           <Route path="/event-delegation" element={<ItemList />} />
           <Route path="/event-delegation-nested" element={<NestedDelegation />} />
+          <Route path="/browser-events" element={<BrowserEvents />} />
+          <Route path="/events" element={<Events />} />
 
           {/* Add more routes as needed */}
         </Routes>

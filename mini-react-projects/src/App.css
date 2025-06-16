@@ -40,3 +40,157 @@
 .read-the-docs {
   color: #888;
 }
+
+.ground {
+  width: 40vw;
+  height: 30vh;
+  background-color:#139113; 
+  margin-top: 50px;
+}
+
+.football{
+  justify-content: flex-start;
+}
+.parentbox {
+  width: 50vw;
+  height: 40vh;
+  margin-top: 50px;
+  border: 3px solid #87CEEB;
+  display: flex;
+  flex-direction: column;
+}
+.box1{
+  width: 200px;
+  height: 100px;
+  border: 2px solid #87CEEB;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+} 
+.box1 > h6 {
+
+  font-weight: bold;
+}
+.box2 {
+  width: 200px;
+  height: 100px;
+  border: 2px solid #87CEEB;
+  margin: auto;
+}
+
+.tooltip-box {
+  position: absolute;
+  background: #333;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 1000;
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeIn 0.2s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.tooltip-box.tooltip-top::after,
+.tooltip-box.tooltip-bottom::after,
+.tooltip-box.tooltip-left::after,
+.tooltip-box.tooltip-right::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.tooltip-top::after {
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px 6px 0 6px;
+  border-color: #333 transparent transparent transparent;
+  color: white;
+}
+
+.tooltip-bottom::after {
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #333 transparent;
+}
+
+.tooltip-left::after {
+  top: 50%;
+  right: -6px;
+  transform: translateY(-50%);
+  border-width: 6px 0 6px 6px;
+  border-color: transparent transparent transparent #333;
+}
+
+.tooltip-right::after {
+  top: 50%;
+  left: -6px;
+  transform: translateY(-50%);
+  border-width: 6px 6px 6px 0;
+  border-color: transparent #333 transparent transparent;
+}
+
+
+.drag-drop-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #87CEEB;
+}
+
+.drag-drop-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  color: #333;
+}
+
+.drag-drop-item {
+  padding: 12px 15px;
+  margin: 5px 0;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: move;
+  transition: all 0.3s ease;
+}
+
+.drag-drop-item.dragging {
+  opacity: 0.5;
+  background-color: #e0e0e0;
+  transform: scale(1.02);
+  color: #333;
+
+}
+
+.drag-drop-item.drag-over {
+  border-top: 2px solid #4CAF50;
+  background-color: #e8f5e9;
+}
+
+.list-state {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.list-state ol {
+  padding-left: 20px;
+}
