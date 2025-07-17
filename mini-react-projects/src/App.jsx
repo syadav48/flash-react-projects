@@ -22,7 +22,7 @@ import ItemList from './event-delegation';
 import NestedDelegation from './event-delegation/nestedEventDel';
 import BrowserEvents from './browser-events';
 import Events from './events';
-
+import Counter from './practice';
 function App() {
   return (
     <Router>
@@ -50,6 +50,7 @@ function App() {
           <Route path="/event-delegation-nested" element={<NestedDelegation />} />
           <Route path="/browser-events" element={<BrowserEvents />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/counter" element={<Counter />} />
 
           {/* Add more routes as needed */}
         </Routes>
