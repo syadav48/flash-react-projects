@@ -23,6 +23,9 @@ import NestedDelegation from './event-delegation/nestedEventDel';
 import BrowserEvents from './browser-events';
 import Events from './events';
 import Counter from './practice';
+import ToDoList from './utils/ToDo-List';
+import DevCounter from './components/devio/Counter';
+import DevIo from './components/devio';
 function App() {
   return (
     <Router>
@@ -51,6 +54,8 @@ function App() {
           <Route path="/browser-events" element={<BrowserEvents />} />
           <Route path="/events" element={<Events />} />
           <Route path="/counter" element={<Counter />} />
+          <Route path="/to-do-lists" element={<ToDoList />} />
+          <Route path="/devio" element={<DevIo />} />
 
           {/* Add more routes as needed */}
         </Routes>

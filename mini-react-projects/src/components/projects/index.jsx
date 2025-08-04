@@ -50,6 +50,14 @@ const Projects = () => {
       codeLink: "/hotel-booking",
       bgColor: "bg-purple-50"
     },
+    {
+      title: "To Do Lists",
+      description: "Add, delete, and mark tasks as complete..",
+      technologies: ["React", "CSS", "JavaScript", "Local-Storage"],
+      liveLink: "/to-do-lists",
+      codeLink: "/to-do-lists",
+      bgColor: "bg-purple-50"
+    },
   ];
 
   return (
